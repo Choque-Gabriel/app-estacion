@@ -1,0 +1,74 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #EEEEEE;
+	color: white;
+	height: 100vh;
+	width: 100vw;
+}
+
+#listado{
+	height: auto;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap:50px;
+	padding: 50px;
+}
+
+.link{
+	flex: 1;
+	min-width: 250px;
+	height: 250px;
+	background-color: white;
+	box-shadow: 0px 10px 10px #BBBBBB;
+	padding: 5px;
+	color: black;
+	text-decoration: none;
+	transition: transform 0.25s;
+}
+
+.card{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap:5px;
+	position: relative;
+}
+
+.cuadrito{
+	width: 100%;
+	height: 60%;
+	background-color: #3386fc;
+}
+
+.link:hover{
+	transform: scale(1.1);
+	cursor : pointer;
+}
+
+.card__title{
+	font-size: 18px;
+	font-weight: bold;
+	color: #8224A2;
+	font-family: sans-serif;
+}
+
+.card__ubicacion{
+	color: gray;
+	margin-top: auto;
+}
+
+.card__visitas{
+	position: absolute;
+	font-family: sans-serif;
+	color: gray;
+	right: 0rem;
+	bottom: 0rem;
+}
